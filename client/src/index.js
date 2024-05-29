@@ -2,21 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals.js';
-import { Provider } from 'react-redux';
+import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query';
-import {api} from "./state/api";
+import { Provider } from 'react-redux';
+import { api } from './state/api';
 
 export const store = configureStore({
-  reducer: {[api.reducerPath]: api.reducer},
-  middleware: (getDefault) => getDefault().concat(api.middleware),
+  reducer: { [api.reducerPath]: api.reducer },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api.middleware),
 });
+
 setupListeners(store.dispatch);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>
 );
 

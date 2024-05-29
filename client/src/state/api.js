@@ -1,12 +1,12 @@
 import { createApi,fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const api = createApi({
-    baseQuery: fetchBaseQuery({ baseUrl: process.env.REACT_APP_BASE_URL }),
+    baseQuery: fetchBaseQuery({ baseUrl: process.env.BASE_URL || "http://localhost:9000"}),
     reducerPath: "main",
     tagTypes: ["Kpis"],
-    endpoints: (builder) => ({
-        getKpis: builder.query({
-            query: () => "kpi/kpis/",
+    endpoints: (build) => ({
+        getKpis: build.query({
+            query: () => "/kpi/kpis",
             providesTags: ["Kpis"],
         }),
     }),
