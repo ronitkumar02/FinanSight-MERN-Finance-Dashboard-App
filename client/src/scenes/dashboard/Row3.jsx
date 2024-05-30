@@ -191,11 +191,8 @@ const Row3 = () => {
                 width="40%"
                 ></Box>
             </Box>
-            <Typography margin="0 1rem" variant="h6">
-                Orci aliquam enim vel diam. Venenatis euismod id donec mus lorem etiam
-                ullamcorper odio sed. Ipsum non sed gravida etiam urna egestas
-                molestie volutpat et. Malesuada quis pretium aliquet lacinia ornare
-                sed. In volutpat nullam at est id cum pulvinar nunc.
+            <Typography margin="10px 10px" variant="h6">
+            Overall Summary and Explanation Data offers a succinct overview of key metrics and trends, highlighting significant insights and performance indicators. This summary aids in understanding complex data, facilitating informed decision-making and strategic planning.
             </Typography>
             </DashboardBox>
 

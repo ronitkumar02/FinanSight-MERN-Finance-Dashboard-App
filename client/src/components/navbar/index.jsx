@@ -11,7 +11,7 @@ import FlexBetween from "../FlexBetween";
 const Navbar = () => {
     const {palette} = useTheme();
     const [selected, setSelected] = useState("dashboard");
-    return <FlexBetween mb="4px" p="2px 0px" color={palette.grey[300]}>
+    return <FlexBetween height={"7%"} p="2px 0px" color={palette.grey[300]}>
         {/* left side */}
         <FlexBetween gap={"4px"}>
             <BlurOnIcon sx={{fontSize:"28px"}}/>
@@ -28,9 +28,9 @@ const Navbar = () => {
                 </Link>
             </Box>
             <Box sx={{"&:hover":{color:palette.primary[100]}}}>
-                <Link to="/perdictions" onClick={() => setSelected("perdictions")}
-                style={{color:selected==="perdictions"? "inherit":palette.grey[700], textDecoration: "inherit"}}>
-                Perdictions
+                <Link to="/predictions" onClick={() => setSelected("predictions")}
+                style={{color:selected==="predictions"? "inherit":palette.grey[700], textDecoration: "inherit"}}>
+                Predictions
                 </Link>
             </Box>
         </FlexBetween>

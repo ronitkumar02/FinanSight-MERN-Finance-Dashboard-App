@@ -9,7 +9,7 @@ const BoxHeader = (props) => {
         <FlexBetween style={{color: palette.grey[400]}}>
             <FlexBetween>
                 {props.icons}
-                <Box style={{ margin: "8px 4px"}}>
+                <Box style={{ margin: "8px 6px"}}>
                     <Typography variant="h4">
                         {props.title}
                     </Typography>
