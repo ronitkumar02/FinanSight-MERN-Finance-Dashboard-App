@@ -40,7 +40,7 @@ FinanSight is a comprehensive finance dashboard application built using the MERN
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/finansight.git
+git clone https://github.com/ronitkumar02/FinanSight-MERN-Finance-Dashboard-App.git
 cd Finansight-MERN-Finance_dashboard-App
 ```
 
