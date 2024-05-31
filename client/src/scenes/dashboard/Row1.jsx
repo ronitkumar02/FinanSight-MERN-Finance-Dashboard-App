@@ -1,20 +1,8 @@
 import { useMemo } from "react";
 import DashboardBox from "../../components/DashboardBox";
 import { useGetKpisQuery } from "../../state/api.js";
-import {
-  ResponsiveContainer,
-  CartesianGrid,
-  AreaChart,
-  BarChart,
-  Bar,
-  LineChart,
-  XAxis,
-  YAxis,
-  Legend,
-  Line,
-  Tooltip,
-  Area,
-} from "recharts";
+import { ResponsiveContainer, CartesianGrid, AreaChart, BarChart, Bar,
+  LineChart, XAxis, YAxis, Legend, Line, Tooltip,Area } from "recharts";
 import { useTheme } from "@emotion/react";
 import BoxHeader from "../../components/BoxHeader.jsx";
 
@@ -70,8 +58,10 @@ const Row1 = () => {
                     subtitle="Top"
                     sideText="+4%"
                 />
-                <ResponsiveContainer width="100%" height="100%">
+                <ResponsiveContainer width="100%" height="90%">
                     <AreaChart
+                        width={500}
+                        height={300}
                         data={revenueExpenses}
                         margin={{
                             top: 5,
@@ -104,7 +94,7 @@ const Row1 = () => {
           subtitle="top line represents revenue, bottom line represents expenses"
           sideText="+4%"
         />
-        <ResponsiveContainer width="100%" height="100%">
+        <ResponsiveContainer width="100%" height="90%">
           <LineChart
             data={revenueProfit}
             margin={{
