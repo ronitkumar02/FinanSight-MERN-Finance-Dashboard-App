@@ -41,13 +41,13 @@ FinanSight is a comprehensive finance dashboard application built using the MERN
 ### Clone the Repository
 ```bash
 git clone https://github.com/your-username/finansight.git
-cd finansight
+cd Finansight-MERN-Finance_dashboard-App
 ```
 
 ### Backend Setup
 1. Navigate to the backend directory:
     ```bash
-    cd backend
+    cd server
     ```
 2. Install backend dependencies:
     ```bash
@@ -66,7 +66,7 @@ cd finansight
 ### Frontend Setup
 1. Navigate to the frontend directory:
     ```bash
-    cd ../frontend
+    cd ../client
     ```
 2. Install frontend dependencies:
     ```bash
@@ -74,7 +74,7 @@ cd finansight
     ```
 3. Start the frontend development server:
     ```bash
-    npm run dev
+    npm start
     ```
 
 ## Usage
